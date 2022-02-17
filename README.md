@@ -3,7 +3,7 @@
 ## What is this?
 This chatbot was developed by me in the span of approximately 2 months. This is my first try at natural langage processing and this extensive of a use of Python's **Sklearn** library.
 
-## What should it do and how should it do it?
+## What should it do and how does it do it?
 The chatbot was designed to perform three functions:
 
 1. Correctly receive the user's name, no matter how complicated it is, as well as simply take in their birth date. This was achieved with the help of **RegEx**s.
