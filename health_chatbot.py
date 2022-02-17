@@ -149,7 +149,6 @@ def vectorize_train(training_documents):
     # Initialize the TfidfVectorizer model and document-term matrix
     vectorizer = TfidfVectorizer()
     tfidf_train = None
-    # [YOUR CODE HERE]
 
     for i in range(len(training_documents)):
         training_documents[i] = preprocessing(training_documents[i])
@@ -221,7 +220,7 @@ def train_nb_model(training_data, training_labels):
 # This function trains an input machine learning model using averaged Word2Vec
 # embeddings for the training documents.
 def train_model(model, word2vec, training_documents, training_labels):
-    # [YOUR CODE HERE]
+
     training_data = []
     for doc in training_documents:
         training_data.append(string2vec(word2vec, doc))
@@ -229,30 +228,6 @@ def train_model(model, word2vec, training_documents, training_labels):
     model.fit(np.array(training_data), training_labels)
 
     return model
-
-
-# Function: test_model(model, word2vec, training_documents, training_labels)
-# model: An instantiated machine learning model
-# word2vec: A pretrained Word2Vec model
-# test_data: A list of test documents
-# test_labels: A list of integers (all 0 or 1)
-# Returns: Precision, recall, F1, and accuracy values for the test data
-#
-# This function tests an input machine learning model by extracting features
-# for each preprocessed test document and then predicting an output label for
-# that document.  It compares the predicted and actual test labels and returns
-# precision, recall, f1, and accuracy scores.
-def test_model(model, word2vec, test_documents, test_labels):
-    precision = None
-    recall = None
-    f1 = None
-    accuracy = None
-
-    # Write your code here:
-
-
-    return precision, recall, f1, accuracy
-
 
 
 # Function: count_words(user_input)
@@ -641,7 +616,6 @@ def get_state_choice (user_input):
 #                                  stylistic_analysis_state() (OUT STATE option 2) or
 #                                  terminate chatbot
 def run_chatbot(model, word2vec):
-    # [YOUR CODE HERE]
 
     first_time = True
     next_state = welcome_state()
