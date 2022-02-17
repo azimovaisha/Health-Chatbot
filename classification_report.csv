@@ -1,0 +1,4 @@
+Name,Precision,Recall,F1,Accuracy
+Logistic Regression,,,,
+SVM,,,,
+Multilayer Perceptron,,,,
